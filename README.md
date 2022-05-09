@@ -8,3 +8,6 @@ In this the major tech stack used is :
  Python
 
  Html && CSS
+ 
+ 
+ And the huge thanks to @huggingFace community.
