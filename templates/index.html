@@ -7,6 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>hello world</h1>
+   <form action="{{url_for('Summarize')}}" method="post">
+       <!-- when we provide data from front-end to backend so name is required to be given -->
+       <textarea name="data" cols="30" rows="10" placeholder="Enter your Data" required = "required"></textarea>
+       <input type="range" min="20" max="1000" value="100" name = "maxL"> 
+       <button type="reset">Clear</button>
+       <button type="submit">Submit</button>
+    </form>
+
+    <h3>Summarized Text</h3>
+
+    <textarea name="result" cols="30" rows="10">{{result}}</textarea>
+
 </body>
 </html>
